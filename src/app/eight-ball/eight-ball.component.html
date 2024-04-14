@@ -1,0 +1,13 @@
+<div class="fortune-teller">
+    <h1>FORTUNE TELLER</h1>
+    <p>Just ask a question and click below to see what the Magic 8-Ball has to say.</p>
+    <div class="eight-ball" (click)="askQuestion()">
+      <div class="eight-ball-window" *ngIf="showAnswer" [@fade]>
+        <span class="eight-ball-answer">{{ answer }}</span>
+      </div>
+    </div>
+    <input type="text" [(ngModel)]="question" placeholder="Enter your question">
+    <button (click)="askQuestion()">Ask</button>
+    <p>For best accuracy, be sure to concentrate very hard on your question</p>
+  </div>
+  

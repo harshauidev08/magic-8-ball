@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
+
+.fortune-teller {
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  padding: 2rem;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  h1 {
+    margin-bottom: 1rem;
+  }
+
+  .eight-ball {
+    background: radial-gradient(circle at 35% 25%, #fff, #000);
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    position: relative;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 0;
+
+    .eight-ball-window {
+      background-color: #fff;
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .eight-ball-answer {
+      color: #000;
+      font-size: 1.2rem;
+      padding: 0.5rem;
+      text-align: center;
+    }
+  }
+
+  input[type="text"] {
+    margin: 1rem 0;
+    padding: 0.5rem;
+    color: white;
+    background-color: #222;
+    border: none;
+    border-bottom: 2px solid white;
+    text-align: center;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: #444;
+    color: white;
+    margin-bottom: 1rem;
+    cursor: pointer;
+    &:hover {
+      background-color: #555;
+    }
+  }
+}
